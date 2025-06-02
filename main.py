@@ -50,7 +50,12 @@ def google_auth_protocol(
             flow = InstalledAppFlow.from_client_secrets_file(
                 get_client_secrets_file(creds_folder_name), scopes
             )
-            creds = flow.run_local_server(port=26000, open_browser=False)
+            creds = flow.run_local_server(
+                port=26000,
+                open_browser=False,
+                host="35.240.144.154",
+                bind_addr="0.0.0.0",
+            )
         # Save the credentials for the next run
         with open(token_path, "wb") as token:
             pickle.dump(creds, token)
