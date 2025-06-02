@@ -20,3 +20,21 @@ pip install -r requirements.txt
 # .env
 send_email_target='user@someemail.com'
 ```
+
+## Debian OS
+
+```bash
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install libssl-dev openssl
+sudo apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncursesw5-dev xz-utils
+     tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+cd ~/downloads
+# Python.org: 3.12.10
+wget https://www.python.org/ftp/python/3.12.10/Python-3.12.10.tgz
+tar -xf Python-3.12.10.tgz
+cd Python-3.12.10
+./configure --enable-optimizations
+make -j 2
+sudo make altinstall
+```
