@@ -87,9 +87,6 @@ def gmail_send_message(creds, email_target: str):
 
 
 def main():
-    """Shows basic usage of the PostmasterTools v1beta1 API.
-    Prints the visible domains on user's domain dashboard in https://postmaster.google.com/managedomains.
-    """
     creds = google_auth_protocol(creds_folder_name="creds")
     gmail_send_message(creds, os.environ.get("send_email_target", ""))
 
