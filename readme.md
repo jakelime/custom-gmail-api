@@ -8,6 +8,8 @@
 ```bash
 # setup .env file, refer to env section for params
 touch .env
+# load your google_credential.json into ./creds
+mkdir creds
 # run python
 python -m venv venv
 source venv/bin/activate
