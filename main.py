@@ -53,7 +53,7 @@ def google_auth_protocol(
             creds = flow.run_local_server(
                 port=26000,
                 open_browser=False,
-                host="35.240.144.154",
+                host="notlocalhost",
                 bind_addr="0.0.0.0",
             )
         # Save the credentials for the next run
