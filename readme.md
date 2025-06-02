@@ -3,6 +3,11 @@
 1. Read quickstart [google workspace gmail api](https://developers.google.com/workspace/gmail/api/quickstart/python)
 1. Read code [google api sending email](https://developers.google.com/workspace/gmail/api/guides/sending#python)
 
+Update:
+
+I have given up on this.
+Unable to get OAuth2 authentication to work on server, console only.
+
 ## Quickstart
 
 ```bash
